@@ -203,3 +203,4 @@
 /home/jon/dev/fullstack_playground/datingApp/backend/API/obj/Debug/net10.0/API.pdb
 /home/jon/dev/fullstack_playground/datingApp/backend/API/obj/Debug/net10.0/API.genruntimeconfig.cache
 /home/jon/dev/fullstack_playground/datingApp/backend/API/obj/Debug/net10.0/ref/API.dll
+/home/jon/dev/fullstack_playground/datingApp/backend/API/obj/Debug/net10.0/API.sourcelink.json
