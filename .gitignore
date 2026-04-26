@@ -484,3 +484,5 @@ $RECYCLE.BIN/
 *.swp
 backend/API/dating.db*
 .vscode/launch.json
+frontend/ssl/localhost.pem
+frontend/ssl/localhost-key.pem
