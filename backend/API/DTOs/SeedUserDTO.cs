@@ -4,9 +4,10 @@ using API.Entities;
 
 namespace API;
 
-public class Member
+public class SeedUserDTO
 {
-    public string Id { get; set; } = null!;
+    public required string Id { get; set; }
+    public required string Email { get; set; }
     public DateOnly DateOfBirth { get; set; }
     public string? ImageUrl { get; set; }
     public required string DisplayName { get; set; }
@@ -18,10 +19,6 @@ public class Member
     public required string Country { get; set; }
 
     //Nav property
-    public List<Photo> Photos { get; set; } = [];
-    
     [ForeignKey(nameof(Id))]
     public AppUser User { get; set; } = null!;
-
-
 }
