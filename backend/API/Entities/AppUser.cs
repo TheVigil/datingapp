@@ -17,4 +17,7 @@ public class AppUser
 
     public required byte[] PasswordSalt { get; set; }
 
+    //Nav property
+    public Member Member { get; set; } = null!;
+
 }
