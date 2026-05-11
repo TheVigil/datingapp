@@ -1,6 +1,7 @@
 using System.Text;
 using API;
 using API.Data;
+using API.Data.Repositories;
 using API.Interfaces;
 using API.Middleware;
 using API.Services;
@@ -25,6 +26,9 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 // CORS
 builder.Services.AddCors();
 builder.Services.AddScoped<ITokenService, TokenService>();
+
+// other services
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 
 // auth configuration
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
