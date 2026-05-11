@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using API.Entities;
 
 namespace API;
@@ -18,6 +19,7 @@ public class Member
     public required string Country { get; set; }
 
     //Nav property
+    [JsonIgnore]
     public List<Photo> Photos { get; set; } = [];
     
     [ForeignKey(nameof(Id))]
