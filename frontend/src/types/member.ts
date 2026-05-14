@@ -10,3 +10,10 @@ export type Member = {
   description?: string
   country: string
 }
+
+export type Photo = {
+  id: number
+  url: string
+  publicId?: string 
+  memberId: string
+}
